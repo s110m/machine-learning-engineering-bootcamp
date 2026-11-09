@@ -1,0 +1,15 @@
+# .ebignore must be in the project root (next to the Dockerfile), not inside .elasticbeanstalk/
+# Same syntax as .gitignore: one pattern per line, "!" = "but DO include this".
+# A leading "/" anchors the pattern to the project root; without it, "!predict.py"
+# would also match any predict.py deep inside folders like .venv.
+
+# Ignore everything...
+*
+
+# ...except the files needed to build and run the Docker image
+# (rule: every file the Dockerfile COPYs must be allowed here)
+!/Dockerfile
+!/pyproject.toml
+!/uv.lock
+!/predict.py
+!/weather_forecast.bin

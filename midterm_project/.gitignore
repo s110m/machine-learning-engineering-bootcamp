@@ -1,0 +1,15 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Python virtual environment (recreated with `uv sync`; Windows-specific and very large)
+.venv/
+
+# Python / Jupyter cache files
+__pycache__/
+.ipynb_checkpoints/
+
+# Notebook backups
+*_backup*.ipynb

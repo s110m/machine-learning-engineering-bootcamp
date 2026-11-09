@@ -1,0 +1,25 @@
+[project]
+name = "midterm-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Seyedali Mousavi", email = "65115632+s110m@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.162.2",
+    "numpy>=2.4.6",
+    "pandas>=3.1.0",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+    "xgboost>=3.2.0",
+]
+
+[project.scripts]
+midterm-project = "midterm_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
